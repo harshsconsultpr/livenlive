@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonew" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/profImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:srcCompat="@android:color/transparent" />
+
+    <Switch
+        android:id="@+id/goLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profImageView" />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="desc"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goLive"
+        app:layout_constraintVertical_bias="0.5" />
+    <LinearLayout
+        android:id="@+id/dropLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/descText"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        android:weightSum="6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinnerRadius"
+            style="@style/MySpinnerStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2.75"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_dropdown"
+            android:spinnerMode="dropdown" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="0dp"
+            android:layout_weight="2.75"
+            android:layout_height="42dp"
+
+            android:background="@drawable/bg_dropdown"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/yourmatches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:text="matcdsssssssssh"
+        app:layout_constraintTop_toBottomOf="@+id/dropLayout"
+
+       />
+</android.support.constraint.ConstraintLayout>

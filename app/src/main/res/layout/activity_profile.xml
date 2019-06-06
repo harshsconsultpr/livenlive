@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/coordinator_layout"
+    tools:context="com.app.tf.livnlive.ProfileActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/CONTINUE"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/NameText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/border_style"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/NameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Name"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/NameText"
+                app:layout_constraintStart_toStartOf="@+id/NameText" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_style"
+                android:gravity="center_vertical"
+                android:hint="Gender"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ethnicity" />
+
+            <TextView
+                android:id="@+id/AgeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/month"
+                app:layout_constraintStart_toStartOf="@+id/month" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Month"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameText" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Year"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameText" />
+
+            <TextView
+                android:id="@+id/htLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/HtText"
+                app:layout_constraintStart_toStartOf="@+id/HtText" />
+
+            <TextView
+                android:id="@+id/HtText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="124dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Height"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameText" />
+
+            <TextView
+                android:id="@+id/BodyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Type"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/body"
+                app:layout_constraintStart_toStartOf="@+id/body" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Body Type"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HtText" />
+
+            <TextView
+                android:id="@+id/EthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ethnicity"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/ethnicity"
+                app:layout_constraintStart_toStartOf="@+id/ethnicity" />
+
+            <TextView
+                android:id="@+id/ethnicity"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Ethnicity"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/body" />
+
+            <TextView
+                android:id="@+id/GenderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/CONTINUE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/colorRed"
+        android:text="CONTINUE"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/listLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@color/colorRed"
+            android:text="Apply" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@color/colorRed"
+            android:onClick="dismissSpinner"
+            android:text="Done" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:background="@drawable/bg"
+        android:divider="@color/colorBlack"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</android.support.constraint.ConstraintLayout>

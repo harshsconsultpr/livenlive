@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.app.tf.livnlive.SignupActivity">
+
+
+    <ImageView
+        android:id="@+id/signupimageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/ImgContent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonew" />
+
+    <TextView
+        android:id="@+id/elabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:height="20dp"
+        android:background="@color/colorNone"
+        android:contentDescription="@string/Email"
+        android:focusable="false"
+        android:labelFor="@id/elabel"
+        android:singleLine="true"
+        android:text="@string/Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        tools:text="Email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupimageView" />
+
+    <TextView
+        android:id="@+id/plabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@color/colorNone"
+        android:contentDescription="@string/Password"
+        android:focusable="false"
+        android:labelFor="@id/plabel"
+        android:singleLine="true"
+        android:text="@string/Password"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:labelFor="@id/password"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+    <TextView
+        android:id="@+id/confirmLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ConfirmPwd"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPwd"
+        app:layout_constraintStart_toStartOf="@+id/ConfirmPwd" />
+
+    <EditText
+        android:id="@+id/ConfirmPwd"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:textCursorDrawable="@null"
+        android:height="20dp"
+        android:background="@drawable/border_style"
+        android:hint="@string/ConfirmPwd"
+        android:inputType="textPassword"
+        android:labelFor="@id/elabel"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/noteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/noteLabel"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+        app:layout_constraintStart_toStartOf="@+id/SignUpButton" />
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorRed"
+        android:onClick="createNewUser"
+        android:text="@string/SignUp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPwd" />
+
+    <Button
+        android:id="@+id/LoginScnButton"
+        android:layout_width="105dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/colorMaroon"
+        android:onClick="goToLoginPage"
+        android:text="@string/LoginButton"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/AlreadyHaveAcnt"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/LoginScnButton"
+        app:layout_constraintEnd_toEndOf="@+id/LoginScnButton"
+        app:layout_constraintStart_toStartOf="@+id/LoginScnButton" />
+
+    <Switch
+        android:id="@+id/TncSwitch"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text=""
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TNCLabel" />
+
+    <TextView
+        android:id="@+id/TNCLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openTnc"
+        android:text="@string/TNC"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@+id/TncSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPwd" />
+
+
+</android.support.constraint.ConstraintLayout>

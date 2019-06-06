@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "819485762845",
+    "firebase_url": "https://livnlive-prod.firebaseio.com",
+    "project_id": "livnlive-prod",
+    "storage_bucket": "livnlive-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819485762845:android:46288bb144509499",
+        "android_client_info": {
+          "package_name": "com.livnlive.go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819485762845-n2u1ddn0fqerp4p420k0emeigi3u5u9l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "819485762845-n2u1ddn0fqerp4p420k0emeigi3u5u9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFiqByUHttDdo7TFI6pyJUuix_PMHb7o8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

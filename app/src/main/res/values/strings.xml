@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">LivNLive</string>
+    <string name="ImgContent">This is the App logo</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="EmailAdd">Email Address</string>
+    <string name="promo">Enter Promo Code</string>
+    <string name="LoginButton"><u>Login</u></string>
+    <string name="SignUpButton"><u>SIGN UP</u></string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="SignUpLabel">Need an account?</string>
+    <string name="AlreadyHaveAcnt">Already have an account?</string>
+    <string name="noteLabel">Note: You will be able to select your app\nfunction preference when logging in</string>
+    <string name="ForgotPassword">Forgotten your password?</string>
+    <string name="fbLoginBtn">Login with Facebook</string>
+    <string name="facebook_app_id">2107714592774745</string>
+    <string name="fb_login_protocol_scheme">fb2107714592774745</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="ConfirmPwd">Confirm Password</string>
+    <string name="TNC">Accept <u>Terms and Conditions</u></string>
+
+    <string name="pref">Select your app preference:</string>
+
+    <string name="RESET">RESET</string>
+    <string name="promocode">Get 3 Months Free Messaging</string>
+    <string name="RemPaswrd">"Remember Password?"</string>
+    <string name="Name">Name</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="Interests">Interests</string>
+    <string name="Display">Display</string>
+    <string name="Select">Select one</string>
+    <string name="Continue">Continue</string>
+    <string name="Save">Save Profile</string>
+    <string name="MYProfile">MY PROFILE</string>
+    <string name="SearchingFor">SEARCHING FOR</string>
+
+
+    <string name="UploadPhoto">Upload Photo</string>
+
+
+    <string-array name="ethnicity">
+        <item>African American</item>
+        <item>Asian</item>
+        <item>Hispanic</item>
+        <item>White</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="bodyType">
+        <item>Thin</item>
+        <item>Athletic</item>
+        <item>Average</item>
+        <item>Few extra pounds</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="previewHead">
+        <item>About Me:</item>
+        <item>Display:</item>
+        <item>Interests:</item>
+    </string-array>
+    <string-array name="previewHead1">
+        <item>Age:</item>
+        <item>Height:</item>
+        <item>Gender:</item>
+        <item>Body Type:</item>
+        <item>Ethnicity:</item>
+    </string-array>
+    <string-array name="menu">
+        <item>My Profile</item>
+        <item>Promotion Code</item>
+        <item>About Us</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Privacy Policy</item>
+        <item>How to use</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="dipalyItems">
+        <item>Photo Only</item>
+        <item>Photo + Name</item>
+        <item>Photo + Name + Interests</item>
+    </string-array>
+    <string-array name="uploadItems">
+        <item>Facebook</item>
+        <item>Library</item>
+        <item>Click Photo</item>
+    </string-array>
+    <string name="title_activity_searchresult">SearchresultActivity</string>
+    <string name="title_activity_feeds">FeedsActivity</string>
+    <string name="title_activity_profile_tabs">ProfileTabs</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_prof_tab">ProfTab</string>
+    <string name="logo">Logo</string>
+    <string name="profImage">profImage</string>
+    <string name="title_activity_buy_msg">BuyMsgActivity</string>
+    <string name="link"><u>Liv N Live</u></string>
+
+</resources>

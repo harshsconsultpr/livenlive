@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/searchSettingActivity"
+    android:background="@drawable/bg"
+    tools:context=".SearchSettingActivity">
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorRed"
+        android:text="SAVE PROFILE"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/htEnd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/border_style"
+                android:gravity="center_vertical"
+                android:hint="Height"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/htStart" />
+
+            <TextView
+                android:id="@+id/ethnicitytext"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_style"
+                android:gravity="center_vertical"
+                android:hint="Ethnicity"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/body" />
+
+            <TextView
+                android:id="@+id/BodyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Body Type"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/body"
+                app:layout_constraintStart_toStartOf="@+id/body" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="to"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/startAge"
+                app:layout_constraintEnd_toStartOf="@+id/endAge"
+                app:layout_constraintStart_toEndOf="@+id/startAge"
+                app:layout_constraintTop_toTopOf="@+id/startAge" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Gender"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ethnicitytext" />
+
+            <TextView
+                android:id="@+id/GenderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Gender"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/AgeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Age"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/startAge"
+                app:layout_constraintStart_toStartOf="@+id/startAge" />
+
+            <TextView
+                android:id="@+id/startAge"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Age"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="to"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/htStart"
+                app:layout_constraintEnd_toStartOf="@+id/htEnd"
+                app:layout_constraintStart_toEndOf="@+id/htStart"
+                app:layout_constraintTop_toTopOf="@+id/htStart" />
+
+            <TextView
+                android:id="@+id/htStart"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Height"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startAge" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Body type"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/htStart" />
+
+            <TextView
+                android:id="@+id/endAge"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/border_style"
+                android:textColorHint="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:hint="Age"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/startAge" />
+
+            <TextView
+                android:id="@+id/ht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Height"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/htStart"
+                app:layout_constraintStart_toStartOf="@+id/htStart" />
+
+            <TextView
+                android:id="@+id/elabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Ethnicity"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/ethnicitytext"
+                app:layout_constraintStart_toStartOf="@+id/ethnicitytext" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/searchlistView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/listLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@color/colorRed"
+            android:text="Apply" />
+
+        <Button
+            android:id="@+id/DoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@color/colorRed"
+            android:onClick="dismissSpinner"
+            android:text="Done" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/searchlistView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:divider="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
